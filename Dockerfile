@@ -25,7 +25,3 @@ RUN buildDependencies="build-essential \
   && apt-get autoremove -y \
   && rm -rf /tmp/build /var/lib/apt/lists/*
 
-COPY schema/corptools_schema schema/corptools_fixtures /tmp/
-
-COPY scripts/01-init-schema.sh  /docker-entrypoint-initdb.d/
-
